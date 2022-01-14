@@ -79,7 +79,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed NO GRADE
 */
-console.log(reviews[5].feedback);
+//console.log(reviews[5].feedback);
 
 
 
@@ -103,29 +103,31 @@ Write a function that creates an object with name, rating, feedback, add the new
 */
 
 function addReview(array, name, rating, feedback){
-  array.push({
-    name, rating, feedback
-    }) 
+  array.push({name, rating, feedback}) 
     return array
   }
 
-console.log(addReview(reviews, 'John', 4, 'Great Place. FUnt o eefe efefefe efef sdf sdfsdfsdfsdf sddjaiegun sgjnagjsdnfg sdfjgdsfgjsdfgjdsfgjsdfgjsdfgjdshf'))
+//console.log(addReview(reviews, 'John', 4, 'Great Place.'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
 
 Use the getReviewByIndex function below to do the following:
-  1. Receive an array
-  2. Receive a number which is the desired index in the array
+  1. X Receive an array
+  2. X Receive a number which is the desired index in the array
   3. The function should return the following string: "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
 //array / number
 function getReviewByIndex(array, index) {
-  /*Your code here*/
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`
+  
 }
+//console.log(getReviewByIndex(reviews,0));
+
+
 
 
   
@@ -143,8 +145,8 @@ Use the getLastReview function below to do the following:
 
 //1 parameter array 
 //array[array.length - 1]
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  return `${array[array.length - 1].name} gave the restaurant a ${array[array.length - 1].rating} star review, and their feedback was: ${array[array.length - 1].feedback}`
 } 
 
 
